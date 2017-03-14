@@ -1,0 +1,8 @@
+sensor_msgs/Image image
+# if a filename is given, load the file
+string filename
+# if a topic name is given, wait for an image on that topic
+string topic
+bool identify
+---
+ms_face_api/Faces faces
