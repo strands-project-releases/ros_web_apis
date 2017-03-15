@@ -15,8 +15,11 @@ from json import dumps
 from math import pi
 
 # big hack to stop annoying warnings
-from requests.packages.urllib3 import disable_warnings
-disable_warnings()
+try:
+    from requests.packages.urllib3 import disable_warnings
+    disable_warnings()
+except:
+    pass
 #
 
 class CognitiveFaceROS:
